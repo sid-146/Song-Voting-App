@@ -14,7 +14,9 @@ export default function Songs() {
   const loadPlaylist = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://127.0.0.1:8000/api/songs");
+      const response = await fetch(
+        "https://song-voting-app-be.onrender.com/api/songs"
+      );
       console.log(response);
       if (!response.ok) {
         throw new Error("Network response was not ok");
