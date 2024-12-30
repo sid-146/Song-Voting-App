@@ -15,7 +15,8 @@ export default function Songs() {
     try {
       setLoading(true);
       const response = await fetch(
-        "https://song-voting-app-be.onrender.com/api/songs"
+        // "https://song-voting-app-be.onrender.com/api/songs"
+        "http://127.0.0.1:8000/api/songs"
       );
       console.log(response);
       if (!response.ok) {
